@@ -84,6 +84,7 @@
   .mqpromo-item {
     width: calc(100% - 20px);
   }
+
   .mqpromo-carousel-wrapper {
     padding: 0 20px;
   }
@@ -120,7 +121,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: #ff5252;
+  background-color: #0482DF;
   color: white;
   font-weight: 600;
   font-size: 12px;
@@ -145,7 +146,7 @@
 }
 
 .mqpromo-item:hover .mqpromo-product-name {
-  color: #ff5252;
+  color: #0482DF;
 }
 
 .mqpromo-product-ref {
@@ -176,7 +177,7 @@
 }
 
 .mqpromo-cta {
-  background-color: #ff5252;
+  background-color: #0482DF;
   color: white;
   border: none;
   border-radius: 6px;
@@ -210,7 +211,7 @@
 }
 
 .mqpromo-cta:hover {
-  background-color: #e03e3e;
+  background-color: #048CF0;
   transform: translateY(-2px);
 }
 
@@ -253,7 +254,7 @@
 
 .mqpromo-prev:hover,
 .mqpromo-next:hover {
-  background-color: #ff5252;
+  background-color: #048CF0;
   transform: scale(1.05);
 }
 
@@ -281,6 +282,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -309,6 +311,6 @@
 }
 
 .mqpromo-dot.active {
-  background-color: #ff5252;
+  background-color: #F7B621;
   transform: scale(1.2);
 }
