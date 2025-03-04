@@ -54,13 +54,26 @@ class MqPromo extends Module
 
       $specific_prices = SpecificPrice::getByProductId($id_product);
 
+      // Prix non réduit (prix régulier)
+      $priceWithoutReduction = $productObj->getPriceWithoutReduct();
+
+      // Prix actuel (avec réduction si applicable)
+      $currentPrice = Product::getPriceStatic($id_product);
+
+      // Calcul du pourcentage de réduction
+      $discount_percentage = 0;
+      if (!empty($specific_prices) && $priceWithoutReduction > 0 && $currentPrice < $priceWithoutReduction) {
+        $discount_percentage = round(100 - ($currentPrice * 100 / $priceWithoutReduction));
+      }
+
       $productInfo = [
         'id_product' => $id_product,
         'reference' => $product['reference'],
         'name' => $product['name'],
-        'price' => $product['price'],
-        'price_without_reduction' => $productObj->getPriceWithoutReduct(),
+        'price' => Tools::displayPrice($currentPrice),
+        'price_without_reduction' => Tools::displayPrice($priceWithoutReduction),
         'specific_prices' => !empty($specific_prices),
+        'discount_percentage' => $discount_percentage,
         'id_image' => $id_image,
         'link_rewrite' => $productObj->link_rewrite
       ];
@@ -68,7 +81,8 @@ class MqPromo extends Module
       $enrichedProducts[] = $productInfo;
     }
 
-    dump($enrichedProducts);
+    // Retirez cette ligne pour la production
+    // dump($enrichedProducts);
 
     $this->context->smarty->assign([
       "promo" => $enrichedProducts

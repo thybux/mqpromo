@@ -21,7 +21,7 @@
           </div>
           <div class="mqpromo-product-info">
             <h3 class="mqpromo-product-name">{$product.name|truncate:30:'...'}</h3>
-            <p class="mqpromo-product-ref">{l s='Ref:' d='Modules.Mqpromo.Shop'} {$product.reference}</p>
+            {*<p class="mqpromo-product-ref">{l s='Ref:' d='Modules.Mqpromo.Shop'} {$product.reference}</p>*}
             <div class="mqpromo-product-price">
               {if isset($product.specific_prices) && $product.specific_prices}
               <span class="mqpromo-old-price">{$product.price_without_reduction}</span>
@@ -30,7 +30,7 @@
               <span class="mqpromo-current-price">{$product.price}</span>
               {/if}
             </div>
-            <button class="mqpromo-cta">{l s='Découvrir' d='Modules.Mqpromo.Shop'}</button>
+            <button class="mqpromo-cta">{l s='Consulter' d='Modules.Mqpromo.Shop'}</button>
           </div>
         </a>
       </div>
