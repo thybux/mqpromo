@@ -315,3 +315,36 @@
   background-color: #F7B621;
   transform: scale(1.2);
 }
+
+.footer-promo-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /*padding: 0 100px;*/
+}
+
+.container-button-promo{
+  text-align: center;
+ }
+.button-nav-promo{
+  color: white;
+  background-color: #0582DF;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition-duration: 300ms;
+  border: none;
+}
+.button-nav-promo:hover{
+  background-color: white;
+  color: #0582DF;
+  cursor: pointer;
+}
+
+@media (min-width: 574px){
+  .footer-promo-container{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+}

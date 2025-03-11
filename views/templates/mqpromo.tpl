@@ -50,9 +50,13 @@
       </button>
     </div>
   </div>
-
-  <div class="mqpromo-dot-indicators" id="mqpromo-dots">
+  <div class="footer-promo-container">
+    <div class="mqpromo-dot-indicators" id="mqpromo-dots"></div>
+    <div class="container-button-promo">
+      <button class="button-nav-promo">Voir toute nos promo</button>
+    </div>
   </div>
+  
 </div>
 
 <script type="text/javascript">
