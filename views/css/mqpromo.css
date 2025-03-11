@@ -1,6 +1,6 @@
 .mqpromo-container {
-  margin: 40px 0;
-  padding: 30px 0;
+  margin: 10px 0;
+  padding: 10px 0;
   width: 100%;
   max-width: 1280px;
   margin-left: auto;
@@ -9,7 +9,7 @@
 
 .mqpromo-header {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -60,7 +60,7 @@
 
 .mqpromo-item {
   flex: 0 0 auto;
-  width: calc(33.333% - 20px);
+  width: calc(25% - 20px);
   scroll-snap-align: start;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);

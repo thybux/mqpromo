@@ -4,7 +4,7 @@
 <div class="mqpromo-container">
   <div class="mqpromo-header">
     <h2>{l s='Nos offres promotionnelles' d='Modules.Mqpromo.Shop'}</h2>
-    <p>{l s='Découvrez nos modèles à prix réduits' d='Modules.Mqpromo.Shop'}</p>
+    <p>{l s='Découvrez nos produits à prix réduits' d='Modules.Mqpromo.Shop'}</p>
   </div>
 
   <div class="mqpromo-carousel-wrapper">
